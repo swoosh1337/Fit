@@ -22,6 +22,17 @@ class RegisterView: UIViewController {
         registerButton.layer.cornerRadius = 10
         
          navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target:self,action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tap)
     }
+    
+    @objc func dismissKeyboard(){
+        self.view.endEditing(true)
+        
+    }
+    
+    
+   
     
 }
