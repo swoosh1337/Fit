@@ -27,6 +27,15 @@ class RegisterView: UIViewController {
         self.view.addGestureRecognizer(tap)
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+         self.addKeyboardObserver()
+     }
+
+     override func viewWillDisappear(_ animated: Bool) {
+         self.removeKeyboardObserver()
+     }
+    
     @objc func dismissKeyboard(){
         self.view.endEditing(true)
         
@@ -36,3 +45,4 @@ class RegisterView: UIViewController {
    
     
 }
+
