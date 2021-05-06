@@ -54,7 +54,7 @@ class LogInView: UIViewController {
                 if let e = error {
                     print(e.localizedDescription)
                 } else {
-                    self!.performSegue(withIdentifier: "toMainScreen2", sender: self)
+                    self!.performSegue(withIdentifier: K.fromLogin, sender: self)
                 }
             }
         }

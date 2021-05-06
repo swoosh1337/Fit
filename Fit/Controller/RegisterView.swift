@@ -43,7 +43,7 @@ class RegisterView: UIViewController {
                 if let e = error {
                     print(e.localizedDescription)
                 } else {
-                    self.performSegue(withIdentifier: "toMainScreen1", sender: self)
+                    self.performSegue(withIdentifier: K.fromRegister, sender: self)
                 }
             }
        
