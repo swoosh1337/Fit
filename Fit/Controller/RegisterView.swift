@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterView: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
@@ -27,6 +28,20 @@ class RegisterView: UIViewController {
         self.view.addGestureRecognizer(tap)
     }
     
+    @IBAction func registerPressed(_ sender: Any) {
+        if let email = emailTextField.text,  let password = createPasswordField.text{
+            Auth.auth().createUser(withEmail: email, password: password) {
+                authResult, error in
+                if let e = error {
+                    print(e.localizedDescription)
+                } else {
+                    self.performSegue(withIdentifier: "toMainScreen1", sender: self)
+                }
+            }
+       
+       
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
          self.addKeyboardObserver()
