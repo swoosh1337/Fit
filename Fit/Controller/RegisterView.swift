@@ -10,16 +10,24 @@ import UIKit
 import Firebase
 
 class RegisterView: UIViewController {
+//    @IBOutlet weak var emailTextField: UITextField!
+//    @IBOutlet weak var createPasswordField: UITextField!
+//    @IBOutlet weak var registerButton: UIButton!
+    
+    
+ 
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var createPasswordField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.layer.cornerRadius = 17
         emailTextField.clipsToBounds = true
-        createPasswordField.layer.cornerRadius = 17
-        createPasswordField.clipsToBounds = true
+        passwordTextField.layer.cornerRadius = 17
+       passwordTextField.clipsToBounds = true
         registerButton.layer.cornerRadius = 10
         
          navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
@@ -29,7 +37,7 @@ class RegisterView: UIViewController {
     }
     
     @IBAction func registerPressed(_ sender: Any) {
-        if let email = emailTextField.text,  let password = createPasswordField.text{
+        if let email = emailTextField.text,  let password = passwordTextField.text{
             Auth.auth().createUser(withEmail: email, password: password) {
                 authResult, error in
                 if let e = error {
