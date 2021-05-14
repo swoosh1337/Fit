@@ -184,6 +184,7 @@
                 <tabBarController id="xd2-m1-yaP" customClass="TabBarScene" customModule="Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="orQ-qZ-fPc">
                         <barButtonItem key="rightBarButtonItem" title="Log out" id="wOQ-jo-NQx">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="logOutPress:" destination="xd2-m1-yaP" id="QwS-Wo-W6b"/>
                             </connections>
@@ -272,7 +273,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ttP-Y2-WhA" kind="relationship" relationship="rootViewController" id="j5h-Ag-pbi"/>
+                        <segue destination="17k-F8-Bka" kind="relationship" relationship="rootViewController" id="CVr-Wc-Qlv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="maU-bc-FD9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -360,22 +361,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYR-w7-QL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5403" y="1556"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ByB-si-7V7">
-            <objects>
-                <viewController id="ttP-Y2-WhA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G7O-qg-tpD">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="cbr-1z-dK3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bQ3-bm-E3t"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wjf-xd-fmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4500" y="1556"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Odl-fY-SS1">
@@ -466,6 +451,87 @@
             </objects>
             <point key="canvasLocation" x="2008" y="717"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0uA-aQ-eiA">
+            <objects>
+                <viewController id="n7u-8a-eLK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uGB-1l-QPg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s9Q-rb-c6Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6tw-uU-7pN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6U1-Xe-UJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5403" y="1556"/>
+        </scene>
+        <!--Diet Controller-->
+        <scene sceneID="fuI-3Z-ARL">
+            <objects>
+                <viewController id="17k-F8-Bka" customClass="DietController" customModule="Fit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IIe-wd-mid">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="ob8-Fv-YrM">
+                                <rect key="frame" x="161" y="230.33333333333334" width="68.333333333333314" height="383.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWg-sW-VCq">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.333333333333329" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-py-r8S">
+                                        <rect key="frame" x="0.0" y="90.333333333333343" width="68.333333333333329" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lba-yf-Mwa">
+                                        <rect key="frame" x="0.0" y="180.66666666666666" width="68.333333333333329" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proteins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keh-JJ-wbF">
+                                        <rect key="frame" x="0.0" y="271" width="68.333333333333329" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6s-oz-2Jr" userLabel="Cam">
+                                        <rect key="frame" x="0.0" y="361.33333333333326" width="68.333333333333329" height="22"/>
+                                        <state key="normal" image="camera" catalog="system"/>
+                                        <connections>
+                                            <action selector="scan:" destination="17k-F8-Bka" eventType="touchUpInside" id="fWf-TI-TJb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WEe-mn-h3E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ob8-Fv-YrM" firstAttribute="centerX" secondItem="IIe-wd-mid" secondAttribute="centerX" id="6xc-4V-fPH"/>
+                            <constraint firstItem="ob8-Fv-YrM" firstAttribute="centerY" secondItem="IIe-wd-mid" secondAttribute="centerY" id="oYY-M7-p7y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7NL-qQ-A28"/>
+                    <connections>
+                        <outlet property="Cam" destination="q6s-oz-2Jr" id="7FE-Yc-bpZ"/>
+                        <outlet property="totalCalories" destination="dWg-sW-VCq" id="ary-pF-2bx"/>
+                        <outlet property="totalCarbs" destination="Lba-yf-Mwa" id="Gho-VI-FaL"/>
+                        <outlet property="totalFats" destination="Fr6-py-r8S" id="Lha-d1-L5o"/>
+                        <outlet property="totalProteins" destination="keh-JJ-wbF" id="l4m-FS-dxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqs-g0-zlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4500" y="1555"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Jre-S7-A2N"/>
@@ -473,6 +539,7 @@
     <resources>
         <image name="Fitnass" width="341.33334350585938" height="341.33334350585938"/>
         <image name="book.circle" catalog="system" width="128" height="121"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="flame" catalog="system" width="108" height="128"/>
         <image name="hare" catalog="system" width="128" height="92"/>
         <image name="plusminus.circle" catalog="system" width="128" height="121"/>
