@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		050FA6B72643FF2400917965 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 050FA6B62643FF2400917965 /* GoogleService-Info.plist */; };
 		050FA6CE264443C000917965 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FA6CD264443C000917965 /* Constants.swift */; };
+		051B80F226527F5D0013C305 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051B80F126527F5D0013C305 /* WeightViewController.swift */; };
+		05B883D626595B5000FE6CCC /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B883D526595B4F00FE6CCC /* RoundButton.swift */; };
 		05ECFFA2264E24D5009F58CE /* DietController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ECFFA1264E24D5009F58CE /* DietController.swift */; };
+		05F54030265D2A370041E6FC /* TrainingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F5402F265D2A370041E6FC /* TrainingController.swift */; };
 		0625FC0CB9674AFF49F8F7DA /* Pods_Fit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C3E461F8CA8D2B28A4701B /* Pods_Fit.framework */; };
 		2A16E491263575AF00CA6E0C /* TabBarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E490263575AF00CA6E0C /* TabBarScene.swift */; };
 		2A364870263233F90035D694 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36486F263233F90035D694 /* LogInView.swift */; };
@@ -25,7 +28,10 @@
 /* Begin PBXFileReference section */
 		050FA6B62643FF2400917965 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		050FA6CD264443C000917965 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		051B80F126527F5D0013C305 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		05B883D526595B4F00FE6CCC /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		05ECFFA1264E24D5009F58CE /* DietController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietController.swift; sourceTree = "<group>"; };
+		05F5402F265D2A370041E6FC /* TrainingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingController.swift; sourceTree = "<group>"; };
 		2A16E490263575AF00CA6E0C /* TabBarScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScene.swift; sourceTree = "<group>"; };
 		2A36486F263233F90035D694 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		2A364872263237680035D694 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 				2A364872263237680035D694 /* RegisterView.swift */,
 				2A16E490263575AF00CA6E0C /* TabBarScene.swift */,
 				05ECFFA1264E24D5009F58CE /* DietController.swift */,
+				051B80F126527F5D0013C305 /* WeightViewController.swift */,
+				05F5402F265D2A370041E6FC /* TrainingController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 				2ADA753D262A3A3C00A41AC1 /* Assets.xcassets */,
 				2ADA7542262A3A3C00A41AC1 /* Info.plist */,
 				050FA6B62643FF2400917965 /* GoogleService-Info.plist */,
+				05B883D526595B4F00FE6CCC /* RoundButton.swift */,
 			);
 			path = Fit;
 			sourceTree = "<group>";
@@ -249,11 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051B80F226527F5D0013C305 /* WeightViewController.swift in Sources */,
+				05F54030265D2A370041E6FC /* TrainingController.swift in Sources */,
 				2ADA7539262A3A3A00A41AC1 /* WelcomeView.swift in Sources */,
 				05ECFFA2264E24D5009F58CE /* DietController.swift in Sources */,
 				2A364873263237680035D694 /* RegisterView.swift in Sources */,
 				2A364870263233F90035D694 /* LogInView.swift in Sources */,
 				2A16E491263575AF00CA6E0C /* TabBarScene.swift in Sources */,
+				05B883D626595B5000FE6CCC /* RoundButton.swift in Sources */,
 				050FA6CE264443C000917965 /* Constants.swift in Sources */,
 				2ADA7535262A3A3A00A41AC1 /* AppDelegate.swift in Sources */,
 				2ADA7537262A3A3A00A41AC1 /* SceneDelegate.swift in Sources */,

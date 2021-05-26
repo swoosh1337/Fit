@@ -15,10 +15,11 @@ class TabBarScene: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Fit"
-        UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 0.5373, blue: 0.898, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 0.0078, blue: 0.0275, alpha: 1) 
         UINavigationBar.appearance().tintColor = UIColor(red: 0, green: 0.5373, blue: 0.898, alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         UINavigationBar.appearance().isTranslucent = false
+        
 
 
 
