@@ -550,13 +550,13 @@
                                 <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qm0-ij-CQc" userLabel="ContentView" customClass="Training">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="673.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="615.33333333333337"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-ac-Xp9">
-                                                <rect key="frame" x="20" y="11.666666666666686" width="350" height="650"/>
+                                                <rect key="frame" x="20" y="11.666666666666686" width="350" height="592"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO2-4k-ybN" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="42"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Legs">
@@ -574,11 +574,11 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="LNh-ES-8dd" kind="push" id="uHP-Sv-Kse"/>
+                                                            <segue destination="ems-GR-nAQ" kind="show" id="R9N-Pb-I3F"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdf-Hk-Tb4" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="110" width="350" height="100"/>
+                                                        <rect key="frame" x="0.0" y="90.666666666666671" width="350" height="42.000000000000014"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Shoulders">
@@ -600,7 +600,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-k7-GpT" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="220" width="350" height="100"/>
+                                                        <rect key="frame" x="0.0" y="181.33333333333331" width="350" height="42"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Back">
@@ -621,8 +621,8 @@
                                                             <segue destination="TK2-l3-ofy" kind="push" id="DnM-Z9-TZ3"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-S1-C5k" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="330" width="350" height="100"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-S1-C5k" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="272" width="350" height="138.66666666666663"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Biceps">
@@ -644,7 +644,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-k8-dF0" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="439.99999999999994" width="350" height="100.00000000000006"/>
+                                                        <rect key="frame" x="0.0" y="459.33333333333331" width="350" height="42"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Triceps">
@@ -666,7 +666,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caX-is-dZ5" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="550" width="350" height="100"/>
+                                                        <rect key="frame" x="0.0" y="550" width="350" height="42"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Chest">
@@ -741,34 +741,6 @@
             <point key="canvasLocation" x="2653.8461538461538" y="1554.739336492891"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="331-lv-KWO">
-            <objects>
-                <viewController id="LNh-ES-8dd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9Gy-BH-KXb">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNC-Od-wvj">
-                                <rect key="frame" x="356" y="107" width="18" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" image="plus" catalog="system"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="RhP-jb-KVy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="dNC-Od-wvj" firstAttribute="leading" secondItem="RhP-jb-KVy" secondAttribute="leading" constant="356" id="DBJ-fJ-41E"/>
-                            <constraint firstItem="dNC-Od-wvj" firstAttribute="top" secondItem="RhP-jb-KVy" secondAttribute="top" constant="19" id="K8R-Ea-GM9"/>
-                            <constraint firstItem="RhP-jb-KVy" firstAttribute="trailing" secondItem="dNC-Od-wvj" secondAttribute="trailing" constant="16" id="Msr-re-U4C"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="QBt-TU-8Gl"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VhD-Mk-odP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="144.61538461538461" y="2361.6113744075828"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="tlF-0z-3tj">
             <objects>
                 <viewController id="TK2-l3-ofy" sceneMemberID="viewController">
@@ -832,28 +804,188 @@
             </objects>
             <point key="canvasLocation" x="942" y="2362"/>
         </scene>
+        <!--Exercises-->
+        <scene sceneID="GZX-C6-uzk">
+            <objects>
+                <tableViewController id="ems-GR-nAQ" customClass="NoteTableView" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rt3-R5-x8f">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCellID" id="IVT-RP-Cjh" customClass="NoteCell" customModule="NoteAppCoreData" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IVT-RP-Cjh" id="eJb-TL-kVe">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excercise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-dW-HYf">
+                                            <rect key="frame" x="20.000000000000007" y="5" width="103.66666666666669" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="C0S-JR-HfC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXj-Dg-6DN">
+                                            <rect key="frame" x="20.000000000000007" y="40" width="103.66666666666669" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5fW-dW-HYf" firstAttribute="top" secondItem="eJb-TL-kVe" secondAttribute="top" constant="5" id="ALZ-gd-JHR"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5fW-dW-HYf" secondAttribute="trailing" constant="10" id="Lug-al-Tbc"/>
+                                        <constraint firstAttribute="bottom" secondItem="fXj-Dg-6DN" secondAttribute="bottom" id="Qug-92-2JS"/>
+                                        <constraint firstItem="5fW-dW-HYf" firstAttribute="leading" secondItem="eJb-TL-kVe" secondAttribute="leading" constant="20" id="Y5F-xa-8M2"/>
+                                        <constraint firstItem="fXj-Dg-6DN" firstAttribute="top" secondItem="5fW-dW-HYf" secondAttribute="bottom" id="ZE6-Fo-ONq"/>
+                                        <constraint firstItem="fXj-Dg-6DN" firstAttribute="width" secondItem="5fW-dW-HYf" secondAttribute="width" id="l2d-zb-Adz"/>
+                                        <constraint firstItem="fXj-Dg-6DN" firstAttribute="centerX" secondItem="5fW-dW-HYf" secondAttribute="centerX" id="qTD-bg-yjL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descLabel" destination="fXj-Dg-6DN" id="jFh-OX-XcM"/>
+                                    <outlet property="titleLabel" destination="5fW-dW-HYf" id="WVf-GZ-KE7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ems-GR-nAQ" id="hBY-ZW-cQu"/>
+                            <outlet property="delegate" destination="ems-GR-nAQ" id="qHH-8u-ax4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Exercises" id="Pp7-fo-RNk">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="et0-gU-Pph">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ulq-D9-aqg">
+                                <rect key="frame" x="344" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="plus" catalog="system"/>
+                            </button>
+                            <connections>
+                                <segue destination="7Bc-Dq-slO" kind="show" identifier="newNote" id="G3s-m2-18I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="7Bc-Dq-slO" kind="show" identifier="editNote" id="psZ-ME-fPj"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naA-YH-vLY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215" y="2362"/>
+        </scene>
+        <!--Exercise Detail-->
+        <scene sceneID="n7g-AT-bXT">
+            <objects>
+                <viewController id="7Bc-Dq-slO" customClass="NoteDetailVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Crs-mW-Lut">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usC-YH-6Ic">
+                                <rect key="frame" x="48.666666666666657" y="164" width="292.66666666666674" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="knp-K2-AOh">
+                                <rect key="frame" x="48.666666666666657" y="259" width="292.66666666666674" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zXI-8f-8ds"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82j-o6-QOI">
+                                <rect key="frame" x="175.66666666666666" y="228" width="38.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFx-AJ-sqz">
+                                <rect key="frame" x="163.33333333333334" y="138" width="63.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYi-QK-nKC">
+                                <rect key="frame" x="140" y="347" width="110" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="DELETE">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="DeleteNote:" destination="7Bc-Dq-slO" eventType="touchUpInside" id="IUy-Tu-0AP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rd0-bC-Bmq"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="knp-K2-AOh" firstAttribute="width" secondItem="usC-YH-6Ic" secondAttribute="width" id="2Om-N4-eZP"/>
+                            <constraint firstItem="usC-YH-6Ic" firstAttribute="centerX" secondItem="fFx-AJ-sqz" secondAttribute="centerX" id="3xt-Qs-man"/>
+                            <constraint firstItem="usC-YH-6Ic" firstAttribute="top" secondItem="fFx-AJ-sqz" secondAttribute="bottom" constant="5" id="JsE-u0-wxG"/>
+                            <constraint firstItem="82j-o6-QOI" firstAttribute="top" secondItem="usC-YH-6Ic" secondAttribute="bottom" constant="30" id="LBq-Wy-OS9"/>
+                            <constraint firstItem="knp-K2-AOh" firstAttribute="centerX" secondItem="82j-o6-QOI" secondAttribute="centerX" id="Nds-11-WvR"/>
+                            <constraint firstItem="knp-K2-AOh" firstAttribute="top" secondItem="82j-o6-QOI" secondAttribute="bottom" constant="10" id="bDh-fL-oLV"/>
+                            <constraint firstItem="usC-YH-6Ic" firstAttribute="width" secondItem="Crs-mW-Lut" secondAttribute="width" multiplier="0.75" id="bou-wS-UtB"/>
+                            <constraint firstItem="bYi-QK-nKC" firstAttribute="centerX" secondItem="knp-K2-AOh" secondAttribute="centerX" id="epu-vV-L92"/>
+                            <constraint firstItem="82j-o6-QOI" firstAttribute="centerX" secondItem="usC-YH-6Ic" secondAttribute="centerX" id="fRL-MQ-EQ0"/>
+                            <constraint firstItem="bYi-QK-nKC" firstAttribute="top" secondItem="knp-K2-AOh" secondAttribute="bottom" constant="38" id="oBI-WA-Eto"/>
+                            <constraint firstItem="fFx-AJ-sqz" firstAttribute="top" secondItem="Rd0-bC-Bmq" secondAttribute="top" constant="50" id="pZX-Fz-2UL"/>
+                            <constraint firstItem="fFx-AJ-sqz" firstAttribute="centerX" secondItem="Rd0-bC-Bmq" secondAttribute="centerX" id="pk2-oZ-DhY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exercise Detail" id="tsP-0U-Sx6">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="JwV-GM-323">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kTC-8l-PWG">
+                                <rect key="frame" x="282" y="4" width="92" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="7Bc-Dq-slO" eventType="touchUpInside" id="nL4-Bm-9Da"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descTV" destination="knp-K2-AOh" id="o8T-KH-Hfm"/>
+                        <outlet property="titleTF" destination="usC-YH-6Ic" id="Pjx-TJ-YbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y60-gW-FdC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215" y="3195"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="U6r-k7-GpT">
-            <size key="intrinsicContentSize" width="53.666666666666664" height="100"/>
+            <size key="intrinsicContentSize" width="54" height="42"/>
         </designable>
         <designable name="caX-is-dZ5">
-            <size key="intrinsicContentSize" width="64.333333333333329" height="100"/>
+            <size key="intrinsicContentSize" width="65" height="42"/>
         </designable>
         <designable name="nTt-S1-C5k">
-            <size key="intrinsicContentSize" width="73" height="100"/>
+            <size key="intrinsicContentSize" width="73" height="42"/>
         </designable>
         <designable name="qqJ-k8-dF0">
-            <size key="intrinsicContentSize" width="78" height="100"/>
+            <size key="intrinsicContentSize" width="78" height="42"/>
         </designable>
         <designable name="vO2-4k-ybN">
-            <size key="intrinsicContentSize" width="52.333333333333336" height="100"/>
+            <size key="intrinsicContentSize" width="53" height="42"/>
         </designable>
         <designable name="xdf-Hk-Tb4">
-            <size key="intrinsicContentSize" width="109" height="100"/>
+            <size key="intrinsicContentSize" width="109" height="42"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
+        <segue reference="G3s-m2-18I"/>
         <segue reference="cBj-6P-eCJ"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -865,8 +997,17 @@
         <image name="photo.on.rectangle.fill" catalog="system" width="128" height="96"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plusminus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
