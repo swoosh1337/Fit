@@ -12,8 +12,11 @@ import CoreData
 class NoteDetailVC: UIViewController
 {
     @IBOutlet weak var titleTF: UITextField!
-    @IBOutlet weak var descTV: UITextView!
     
+    
+    @IBOutlet weak var descTV: UITextField!
+    
+   
     var selectedNote: Note? = nil
     
     override func viewDidLoad()
@@ -28,21 +31,30 @@ class NoteDetailVC: UIViewController
 
 
     @IBAction func saveAction(_ sender: Any)
+    
     {
+        
+        print("Saving...")
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
         if(selectedNote == nil)
         {
             let entity = NSEntityDescription.entity(forEntityName: "Note", in: context)
             let newNote = Note(entity: entity!, insertInto: context)
-            newNote.id = Int32(truncating: noteList.count as NSNumber)
+            newNote.id =  noteList.count as NSNumber
             newNote.title = titleTF.text
             newNote.desc = descTV.text
             do
             {
+             
                 try context.save()
                 noteList.append(newNote)
+                
+                
+                
                 navigationController?.popViewController(animated: true)
+                
             }
             catch
             {

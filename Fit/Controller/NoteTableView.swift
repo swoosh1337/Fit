@@ -20,8 +20,9 @@ class NoteTableView: UITableViewController
         var noDeleteNoteList = [Note]()
         for note in noteList
         {
-            if(note.deletedDate == nil)
+            if(note.deletedDate == nil && noDeleteNoteList.contains(note) == false)
             {
+                
                 noDeleteNoteList.append(note)
             }
         }
@@ -42,6 +43,7 @@ class NoteTableView: UITableViewController
                 {
                     let note = result as! Note
                     noteList.append(note)
+             
                 }
             }
             catch
@@ -52,16 +54,20 @@ class NoteTableView: UITableViewController
     }
     
     
+    
+   
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let noteCell = tableView.dequeueReusableCell(withIdentifier: "noteCellID", for: indexPath) as! NoteCell
+        let noteCell = tableView.dequeueReusableCell(withIdentifier: "NoteCellID", for: indexPath) as! NoteCell
         
         let thisNote: Note!
         thisNote = nonDeletedNotes()[indexPath.row]
+       
         
         noteCell.titleLabel.text = thisNote.title
         noteCell.descLabel.text = thisNote.desc
-        
+//        tableView.reloadData()
         return noteCell
     }
     
@@ -73,6 +79,7 @@ class NoteTableView: UITableViewController
     
     override func viewDidAppear(_ animated: Bool)
     {
+       
         tableView.reloadData()
     }
     
@@ -96,6 +103,8 @@ class NoteTableView: UITableViewController
             tableView.deselectRow(at: indexPath, animated: true)
         }
     }
+    
+    
     
     
 }
