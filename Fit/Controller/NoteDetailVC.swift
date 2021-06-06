@@ -16,6 +16,8 @@ class NoteDetailVC: UIViewController
     
     @IBOutlet weak var descTV: UITextField!
     
+    var name1 = ""
+    
    
     var selectedNote: Note? = nil
     
@@ -49,7 +51,37 @@ class NoteDetailVC: UIViewController
             {
              
                 try context.save()
-                noteList.append(newNote)
+                
+                if (name1 == "Legs" ){
+                 
+                    Legs.append(newNote)
+                
+                }
+                if (name1 == "Biceps"){
+
+                   
+                    Biceps.append(newNote)
+                }
+                
+                if (name1 == "Triceps"){
+                    
+                    Triceps.append(newNote)
+                }
+                
+                if (name1 == "Back") {
+                 
+                    Back.append(newNote)
+                }
+                
+                if (name1 == "Shoulders"){
+                 
+                    Shoulders.append(newNote)
+                }
+                
+                if (name1 == "Chest") {
+                   
+                    Chest.append(newNote)
+                }
                 
                 
                 

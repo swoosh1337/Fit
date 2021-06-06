@@ -558,7 +558,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="ems-GR-nAQ" kind="show" id="R9N-Pb-I3F"/>
+                                                            <action selector="buttonClicked:" destination="eKA-gT-L8y" eventType="touchUpInside" id="Q9Y-R8-IXF"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdf-Hk-Tb4" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
@@ -580,7 +580,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="ems-GR-nAQ" kind="push" id="Uyv-Np-wob"/>
+                                                            <action selector="buttonClicked:" destination="eKA-gT-L8y" eventType="touchUpInside" id="xVg-CM-oGB"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-k7-GpT" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
@@ -602,7 +602,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="ems-GR-nAQ" kind="push" id="9I3-kr-czZ"/>
+                                                            <action selector="buttonClicked:" destination="eKA-gT-L8y" eventType="touchUpInside" id="8Sp-dx-tWC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-S1-C5k" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
@@ -624,7 +624,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="ems-GR-nAQ" kind="push" id="Sy6-OF-fYA"/>
+                                                            <action selector="buttonClicked:" destination="eKA-gT-L8y" eventType="touchUpInside" id="694-Wx-JUv"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-k8-dF0" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
@@ -646,7 +646,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="ems-GR-nAQ" kind="push" id="HB0-SO-01d"/>
+                                                            <action selector="buttonClicked:" destination="eKA-gT-L8y" eventType="touchUpInside" id="wbc-DD-NZU"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caX-is-dZ5" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
@@ -668,7 +668,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="ems-GR-nAQ" kind="push" id="Ljs-6P-ydL"/>
+                                                            <action selector="buttonClicked:" destination="eKA-gT-L8y" eventType="touchUpInside" id="a7m-Xc-rhP"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -718,6 +718,7 @@
                         <outlet property="Legs" destination="vO2-4k-ybN" id="W7L-qh-qem"/>
                         <outlet property="Shoulders" destination="xdf-Hk-Tb4" id="xI6-wg-KOU"/>
                         <outlet property="Triceps" destination="qqJ-k8-dF0" id="fx6-gO-vX7"/>
+                        <segue destination="ems-GR-nAQ" kind="push" identifier="toExerciseView" id="Nzv-MH-S9R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTU-Xa-vDo" sceneMemberID="firstResponder"/>
@@ -905,7 +906,6 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="gnj-8b-aa7"/>
-        <segue reference="HB0-SO-01d"/>
         <segue reference="cBj-6P-eCJ"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -73,6 +73,7 @@
 		050FA6CC264442E600917965 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				05B883D526595B4F00FE6CCC /* RoundButton.swift */,
 				05DBC0AD266291A700752B23 /* Note.swift */,
 				05DBC0A92662809C00752B23 /* NoteCell.swift */,
 			);
@@ -143,7 +144,6 @@
 				2ADA753D262A3A3C00A41AC1 /* Assets.xcassets */,
 				2ADA7542262A3A3C00A41AC1 /* Info.plist */,
 				050FA6B62643FF2400917965 /* GoogleService-Info.plist */,
-				05B883D526595B4F00FE6CCC /* RoundButton.swift */,
 				0500DBCF2664D98B0098A9AB /* FitCoreData.xcdatamodeld */,
 			);
 			path = Fit;
