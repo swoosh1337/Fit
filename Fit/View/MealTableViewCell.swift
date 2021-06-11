@@ -11,9 +11,11 @@ import SwiftyJSON
 import SDWebImage
 
 class MealTableViewCell: UITableViewCell {
-  
-  @IBOutlet weak var mealImage: UIImageView!
-  @IBOutlet weak var mealLabel: UILabel!
+    @IBOutlet weak var imageV: UIImageView!
+
+
+    @IBOutlet weak var labelV: UILabel!
+ 
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -26,17 +28,21 @@ class MealTableViewCell: UITableViewCell {
   }
   
   func setupCell(meal: JSON) {
-    mealLabel.text = meal["strMeal"].stringValue
-    mealImage.sd_setImage(with: URL(string: meal["strMealThumb"].stringValue))
+    labelV.text = meal["strMeal"].stringValue
+    imageV.sd_setImage(with: URL(string: meal["strMealThumb"].stringValue))
   }
   
   func imageStyles() {
-    mealImage.layer.cornerRadius = 10
-    mealImage.layer.masksToBounds = true
-    mealImage.contentMode = .scaleAspectFill
+    imageV.layer.cornerRadius = 10
+    imageV.layer.masksToBounds = true
+    imageV.contentMode = .scaleAspectFill
   }
 
   func labelStyles() {
-    mealLabel.numberOfLines = 2
+    labelV.numberOfLines = 2
   }
 }
+
+
+
+

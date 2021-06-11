@@ -19,13 +19,13 @@ class MealViewController: UIViewController, UITableViewDataSource, UITableViewDe
   
   var dataListMeal: JSON = []
   
+    @IBOutlet weak var tableV : UITableView!
   //MARK: IBOutlet
-  @IBOutlet weak var tableView: UITableView!
-  
-  override func viewDidLoad() {
+
+    override func viewDidLoad() {
     super.viewDidLoad()
-    tableView.tableFooterView = UIView()
-    tableView.rowHeight = 200
+        tableV.tableFooterView = UIView()
+        tableV.rowHeight = 200
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -46,7 +46,8 @@ class MealViewController: UIViewController, UITableViewDataSource, UITableViewDe
   
   func updateDataMeal(json: JSON) {
     dataListMeal = json["meals"]
-    tableView.reloadData()
+    print(dataListMeal,"aeee")
+    tableV.reloadData()
   }
   
   //MARK: TableViewDataSource
@@ -55,8 +56,9 @@ class MealViewController: UIViewController, UITableViewDataSource, UITableViewDe
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MealTableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath) as! MealTableViewCell
     let listMeal = dataListMeal[indexPath.row]
+    print("sukkaaaa")
   
     cell.setupCell(meal: listMeal)
     
