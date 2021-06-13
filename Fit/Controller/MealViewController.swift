@@ -24,6 +24,14 @@ class MealViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     override func viewDidLoad() {
     super.viewDidLoad()
+        self.tableV.register(UITableViewCell.self, forCellReuseIdentifier: "cell1")
+               
+               // (optional) include this line if you want to remove the extra empty cell divider lines
+               // self.tableView.tableFooterView = UIView()
+
+               // This view controller itself will provide the delegate methods and row data for the table view.
+               tableV.delegate = self
+               tableV.dataSource = self
         tableV.tableFooterView = UIView()
         tableV.rowHeight = 200
   }
@@ -43,7 +51,10 @@ class MealViewController: UIViewController, UITableViewDataSource, UITableViewDe
       }
     }
   }
-  
+    @IBAction func toSeach(_ sender: Any) {
+        performSegue(withIdentifier: "toSearch", sender: self)
+    }
+    
   func updateDataMeal(json: JSON) {
     dataListMeal = json["meals"]
     print(dataListMeal,"aeee")
@@ -52,17 +63,19 @@ class MealViewController: UIViewController, UITableViewDataSource, UITableViewDe
   
   //MARK: TableViewDataSource
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    print("sosat")
     return dataListMeal.count
+
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath) as! MealTableViewCell
+    let cell1 = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath) as! MealTableViewCell
     let listMeal = dataListMeal[indexPath.row]
     print("sukkaaaa")
   
-    cell.setupCell(meal: listMeal)
+    cell1.setupCell(meal: listMeal)
     
-    return cell
+    return cell1
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

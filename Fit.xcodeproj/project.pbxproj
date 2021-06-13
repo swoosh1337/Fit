@@ -14,7 +14,7 @@
 		053BA2D826726FD500FAED02 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2D726726FD500FAED02 /* MealTableViewCell.swift */; };
 		053BA2DA267270EB00FAED02 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2D9267270EB00FAED02 /* MealViewController.swift */; };
 		053BA2DC2672711200FAED02 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DB2672711200FAED02 /* MealDetailViewController.swift */; };
-		053BA2DE2672714C00FAED02 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DD2672714C00FAED02 /* SearchViewController.swift */; };
+		053BA2DE2672714C00FAED02 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DD2672714C00FAED02 /* SearchController.swift */; };
 		053BA2E0267271A000FAED02 /* MealDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DF267271A000FAED02 /* MealDataModel.swift */; };
 		05B883D626595B5000FE6CCC /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B883D526595B4F00FE6CCC /* RoundButton.swift */; };
 		05DBC0A82662806100752B23 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DBC0A72662806100752B23 /* NoteDetailVC.swift */; };
@@ -43,7 +43,7 @@
 		053BA2D726726FD500FAED02 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		053BA2D9267270EB00FAED02 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		053BA2DB2672711200FAED02 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
-		053BA2DD2672714C00FAED02 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		053BA2DD2672714C00FAED02 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		053BA2DF267271A000FAED02 /* MealDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDataModel.swift; sourceTree = "<group>"; };
 		05B883D526595B4F00FE6CCC /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		05DBC0A72662806100752B23 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				05DBC0AB266280D600752B23 /* NoteTableView.swift */,
 				053BA2D9267270EB00FAED02 /* MealViewController.swift */,
 				053BA2DB2672711200FAED02 /* MealDetailViewController.swift */,
-				053BA2DD2672714C00FAED02 /* SearchViewController.swift */,
+				053BA2DD2672714C00FAED02 /* SearchController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Beka Japaridze";
 				TargetAttributes = {
 					2ADA7530262A3A3900A41AC1 = {
@@ -299,7 +299,7 @@
 				2A364873263237680035D694 /* RegisterView.swift in Sources */,
 				2A364870263233F90035D694 /* LogInView.swift in Sources */,
 				2A16E491263575AF00CA6E0C /* TabBarScene.swift in Sources */,
-				053BA2DE2672714C00FAED02 /* SearchViewController.swift in Sources */,
+				053BA2DE2672714C00FAED02 /* SearchController.swift in Sources */,
 				053BA2D826726FD500FAED02 /* MealTableViewCell.swift in Sources */,
 				05B883D626595B5000FE6CCC /* RoundButton.swift in Sources */,
 				05DBC0AE266291A700752B23 /* Note.swift in Sources */,
@@ -360,6 +360,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -384,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,6 +421,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -438,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
