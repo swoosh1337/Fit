@@ -10,12 +10,14 @@
 		0500DBD12664D98B0098A9AB /* FitCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0500DBCF2664D98B0098A9AB /* FitCoreData.xcdatamodeld */; };
 		050FA6B72643FF2400917965 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 050FA6B62643FF2400917965 /* GoogleService-Info.plist */; };
 		050FA6CE264443C000917965 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FA6CD264443C000917965 /* Constants.swift */; };
-		051B80F226527F5D0013C305 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051B80F126527F5D0013C305 /* WeightViewController.swift */; };
 		053BA2D826726FD500FAED02 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2D726726FD500FAED02 /* MealTableViewCell.swift */; };
 		053BA2DA267270EB00FAED02 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2D9267270EB00FAED02 /* MealViewController.swift */; };
 		053BA2DC2672711200FAED02 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DB2672711200FAED02 /* MealDetailViewController.swift */; };
 		053BA2DE2672714C00FAED02 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DD2672714C00FAED02 /* SearchController.swift */; };
 		053BA2E0267271A000FAED02 /* MealDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DF267271A000FAED02 /* MealDataModel.swift */; };
+		05946CDB2677EB3D00A06D19 /* WeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05946CDA2677EB3D00A06D19 /* WeightController.swift */; };
+		05946CDD2677EB9D00A06D19 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05946CDC2677EB9D00A06D19 /* ViewControllerTableViewCell.swift */; };
+		05946CDF2677EBE100A06D19 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05946CDE2677EBE100A06D19 /* AddWeightViewController.swift */; };
 		05B883D626595B5000FE6CCC /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B883D526595B4F00FE6CCC /* RoundButton.swift */; };
 		05DBC0A82662806100752B23 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DBC0A72662806100752B23 /* NoteDetailVC.swift */; };
 		05DBC0AA2662809C00752B23 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DBC0A92662809C00752B23 /* NoteCell.swift */; };
@@ -39,12 +41,14 @@
 		0500DBD02664D98B0098A9AB /* Note.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Note.xcdatamodel; sourceTree = "<group>"; };
 		050FA6B62643FF2400917965 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		050FA6CD264443C000917965 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
-		051B80F126527F5D0013C305 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		053BA2D726726FD500FAED02 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		053BA2D9267270EB00FAED02 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		053BA2DB2672711200FAED02 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
 		053BA2DD2672714C00FAED02 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		053BA2DF267271A000FAED02 /* MealDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDataModel.swift; sourceTree = "<group>"; };
+		05946CDA2677EB3D00A06D19 /* WeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightController.swift; sourceTree = "<group>"; };
+		05946CDC2677EB9D00A06D19 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		05946CDE2677EBE100A06D19 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
 		05B883D526595B4F00FE6CCC /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		05DBC0A72662806100752B23 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
 		05DBC0A92662809C00752B23 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				05DBC0AD266291A700752B23 /* Note.swift */,
 				05DBC0A92662809C00752B23 /* NoteCell.swift */,
 				053BA2DF267271A000FAED02 /* MealDataModel.swift */,
+				05946CDC2677EB9D00A06D19 /* ViewControllerTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,13 +123,14 @@
 				2A364872263237680035D694 /* RegisterView.swift */,
 				2A16E490263575AF00CA6E0C /* TabBarScene.swift */,
 				05ECFFA1264E24D5009F58CE /* DietController.swift */,
-				051B80F126527F5D0013C305 /* WeightViewController.swift */,
 				05F5402F265D2A370041E6FC /* TrainingController.swift */,
 				05DBC0A72662806100752B23 /* NoteDetailVC.swift */,
 				05DBC0AB266280D600752B23 /* NoteTableView.swift */,
 				053BA2D9267270EB00FAED02 /* MealViewController.swift */,
 				053BA2DB2672711200FAED02 /* MealDetailViewController.swift */,
 				053BA2DD2672714C00FAED02 /* SearchController.swift */,
+				05946CDA2677EB3D00A06D19 /* WeightController.swift */,
+				05946CDE2677EBE100A06D19 /* AddWeightViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,21 +294,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051B80F226527F5D0013C305 /* WeightViewController.swift in Sources */,
 				05DBC0A82662806100752B23 /* NoteDetailVC.swift in Sources */,
 				053BA2DC2672711200FAED02 /* MealDetailViewController.swift in Sources */,
+				05946CDF2677EBE100A06D19 /* AddWeightViewController.swift in Sources */,
 				053BA2E0267271A000FAED02 /* MealDataModel.swift in Sources */,
 				05F54030265D2A370041E6FC /* TrainingController.swift in Sources */,
 				2ADA7539262A3A3A00A41AC1 /* WelcomeView.swift in Sources */,
 				05DBC0AA2662809C00752B23 /* NoteCell.swift in Sources */,
 				05ECFFA2264E24D5009F58CE /* DietController.swift in Sources */,
 				2A364873263237680035D694 /* RegisterView.swift in Sources */,
+				05946CDB2677EB3D00A06D19 /* WeightController.swift in Sources */,
 				2A364870263233F90035D694 /* LogInView.swift in Sources */,
 				2A16E491263575AF00CA6E0C /* TabBarScene.swift in Sources */,
 				053BA2DE2672714C00FAED02 /* SearchController.swift in Sources */,
 				053BA2D826726FD500FAED02 /* MealTableViewCell.swift in Sources */,
 				05B883D626595B5000FE6CCC /* RoundButton.swift in Sources */,
 				05DBC0AE266291A700752B23 /* Note.swift in Sources */,
+				05946CDD2677EB9D00A06D19 /* ViewControllerTableViewCell.swift in Sources */,
 				050FA6CE264443C000917965 /* Constants.swift in Sources */,
 				2ADA7535262A3A3A00A41AC1 /* AppDelegate.swift in Sources */,
 				05DBC0AC266280D600752B23 /* NoteTableView.swift in Sources */,
