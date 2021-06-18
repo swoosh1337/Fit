@@ -14,7 +14,7 @@ class AddWeightViewController: UIViewController {
     let date = DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .none)
     let dateToDisplay = DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .short)
     @IBOutlet weak var textEnterWeight: UITextField!
-    @IBOutlet weak var segmentDayTime: UISegmentedControl!
+   
     
     @IBOutlet weak var dateStamp: UILabel!
     
@@ -37,7 +37,7 @@ class AddWeightViewController: UIViewController {
             
             weight.currentweight = textEnterWeight.text!
             weight.datestamp = String(date)
-            weight.daytime = String(segmentDayTime.titleForSegment(at: segmentDayTime.selectedSegmentIndex)!)
+           
             
             
             // Save to core data

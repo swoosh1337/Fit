@@ -1160,7 +1160,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-da-5xf">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚖️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-da-5xf">
                                                     <rect key="frame" x="8" y="33" width="185" height="44"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                     <nil key="textColor"/>
@@ -1248,14 +1248,6 @@
                                     <action selector="buttonPressed:" destination="NQl-u0-UoQ" eventType="touchUpInside" id="mqQ-7z-vIA"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-ak-p8Z">
-                                <rect key="frame" x="36" y="190" width="318" height="32"/>
-                                <segments>
-                                    <segment title="Morning"/>
-                                    <segment title="Noon"/>
-                                    <segment title="Evening"/>
-                                </segments>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date stamp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-FH-33h">
                                 <rect key="frame" x="60" y="675" width="269" height="86"/>
                                 <constraints>
@@ -1269,13 +1261,10 @@
                         <viewLayoutGuide key="safeArea" id="7oV-JH-9iI"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VaT-ak-p8Z" firstAttribute="top" secondItem="XYM-8c-s2j" secondAttribute="bottom" constant="50" id="1bl-gG-93o"/>
                             <constraint firstItem="v8Y-R0-g0q" firstAttribute="centerX" secondItem="49X-N1-XIi" secondAttribute="centerX" id="3Z3-yn-NNy"/>
                             <constraint firstItem="XYM-8c-s2j" firstAttribute="leading" secondItem="49X-N1-XIi" secondAttribute="leadingMargin" constant="20" id="81o-M7-hWM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VaT-ak-p8Z" secondAttribute="trailing" constant="20" id="FbL-fe-KPz"/>
                             <constraint firstItem="X8z-XY-Q1n" firstAttribute="top" secondItem="7Os-FH-33h" secondAttribute="bottom" id="Shb-AP-pdw"/>
                             <constraint firstItem="7Os-FH-33h" firstAttribute="leading" secondItem="49X-N1-XIi" secondAttribute="leadingMargin" constant="44" id="Y2t-cc-rnu"/>
-                            <constraint firstItem="VaT-ak-p8Z" firstAttribute="leading" secondItem="49X-N1-XIi" secondAttribute="leadingMargin" constant="20" id="fLd-xU-94h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7Os-FH-33h" secondAttribute="trailing" constant="45" id="gqp-TD-HoW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XYM-8c-s2j" secondAttribute="trailing" constant="20" id="ouN-9m-Rz0"/>
                             <constraint firstItem="v8Y-R0-g0q" firstAttribute="centerY" secondItem="49X-N1-XIi" secondAttribute="centerY" id="pHN-zt-GDV"/>
@@ -1285,7 +1274,6 @@
                     <navigationItem key="navigationItem" id="eHN-u0-bHE"/>
                     <connections>
                         <outlet property="dateStamp" destination="7Os-FH-33h" id="6VD-fX-V9V"/>
-                        <outlet property="segmentDayTime" destination="VaT-ak-p8Z" id="e7i-zH-cqn"/>
                         <outlet property="textEnterWeight" destination="XYM-8c-s2j" id="4vf-jh-edB"/>
                     </connections>
                 </viewController>
