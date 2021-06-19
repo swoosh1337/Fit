@@ -15,6 +15,7 @@
 		053BA2DC2672711200FAED02 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DB2672711200FAED02 /* MealDetailViewController.swift */; };
 		053BA2DE2672714C00FAED02 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DD2672714C00FAED02 /* SearchController.swift */; };
 		053BA2E0267271A000FAED02 /* MealDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA2DF267271A000FAED02 /* MealDataModel.swift */; };
+		0593B2AF267E1DF80079E89C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0593B2AE267E1DF80079E89C /* TimerViewController.swift */; };
 		05946CDB2677EB3D00A06D19 /* WeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05946CDA2677EB3D00A06D19 /* WeightController.swift */; };
 		05946CDD2677EB9D00A06D19 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05946CDC2677EB9D00A06D19 /* ViewControllerTableViewCell.swift */; };
 		05946CDF2677EBE100A06D19 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05946CDE2677EBE100A06D19 /* AddWeightViewController.swift */; };
@@ -47,6 +48,7 @@
 		053BA2DB2672711200FAED02 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
 		053BA2DD2672714C00FAED02 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		053BA2DF267271A000FAED02 /* MealDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDataModel.swift; sourceTree = "<group>"; };
+		0593B2AE267E1DF80079E89C /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		05946CDA2677EB3D00A06D19 /* WeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightController.swift; sourceTree = "<group>"; };
 		05946CDC2677EB9D00A06D19 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		05946CDE2677EBE100A06D19 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				053BA2DD2672714C00FAED02 /* SearchController.swift */,
 				05946CDA2677EB3D00A06D19 /* WeightController.swift */,
 				05946CDE2677EBE100A06D19 /* AddWeightViewController.swift */,
+				0593B2AE267E1DF80079E89C /* TimerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0593B2AF267E1DF80079E89C /* TimerViewController.swift in Sources */,
 				05DBC0A82662806100752B23 /* NoteDetailVC.swift in Sources */,
 				053BA2DC2672711200FAED02 /* MealDetailViewController.swift in Sources */,
 				05946CE12678D5F300A06D19 /* Avg.swift in Sources */,
