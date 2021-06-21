@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -62,11 +63,32 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         }
     }
     
-    @objc func pauseWhenBackground(noti: Notification) {
-        self.timer.invalidate()
-        let shared = UserDefaults.standard
-        shared.set(Date(), forKey: "savedTime")
+    @objc func background(noti: Notification) {
+        while seconds > 0{
+        seconds -= 1
+        timerLabel.text = timeString(time: TimeInterval(seconds))
+        print("im am in background")
+        }
+        
+        
+            let notificationContent = UNMutableNotificationContent()
+            notificationContent.title = "Heyoo"
+            notificationContent.subtitle = "Time is up!"
+            notificationContent.body = "You can enjoy your meals now!"
+            notificationContent.badge = 1
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let request = UNNotificationRequest(
+            identifier: "SimplifiediOSNotification", content: notificationContent, trigger: trigger)
+            
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
     }
+    
+  
+        
+    
+   
     
     @IBAction func resetButtonTapped(_ sender: Any) {
         timer.invalidate()
@@ -76,22 +98,33 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         pauseButton.isEnabled = false
     }
     
-    @objc func willEnterForeground(noti: Notification) {
-        if let savedDate = UserDefaults.standard.object(forKey: "savedTime") as? Date {
-            (diffHrs, diffMins, diffSecs) = TimerViewController.getTimeDifference(startDate: savedDate)
-            seconds = refresh(hours: diffHrs, mins: diffMins, secs: diffSecs)
-            runTimer()
-            self.startButton.isEnabled = true
-        }
-    }
+    
+  
     
     @objc func updateTimer() {
         if seconds < 1 {
+            
+            
             timer.invalidate()
+            print("stoping timer...")
+            
+            let notificationContent = UNMutableNotificationContent()
+            notificationContent.title = "Heyoo"
+            notificationContent.subtitle = "Time is up!"
+            notificationContent.body = "You can enjoy your meals now!"
+            notificationContent.badge = 1
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let request = UNNotificationRequest(
+            identifier: "SimplifiediOSNotification", content: notificationContent, trigger: trigger)
+            
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            
         } else {
             seconds -= 1
             timerLabel.text = timeString(time: TimeInterval(seconds))
         }
+        print("going...")
     }
     
     func timeString(time:TimeInterval) -> String {
@@ -129,15 +162,21 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let notificationCenter = NotificationCenter.default
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
+            
+        })
         
+        notificationCenter.addObserver(self, selector: #selector(background), name: UIApplication.didEnterBackgroundNotification, object: nil)
+
+
         
         
         pauseButton.isEnabled = false
         TimerPickerView.delegate = self
         TimerPickerView.dataSource = self
         
-//        NotificationCenter.default.addObserver(self, selector: #selector(pauseWhenBackground(noti:)), name: .UIApplicationDidEnterBackground, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground(noti:)), name: .UIApplicationWillEnterForeground, object: nil)
+        
 
         
         
