@@ -1257,16 +1257,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plate" translatesAutoresizingMaskIntoConstraints="NO" id="9vO-jI-xCk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mexican-food-black-background_23-2147740704" translatesAutoresizingMaskIntoConstraints="NO" id="9vO-jI-xCk">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxV-Fy-Faw">
                                 <rect key="frame" x="36.666666666666657" y="145" width="317" height="50"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0n-Sc-pkM">
-                                <rect key="frame" x="76" y="263" width="34" height="30"/>
+                                <rect key="frame" x="44" y="263" width="54" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="1" green="0.034920876080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -1275,23 +1277,29 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJc-ja-gDP">
-                                <rect key="frame" x="174" y="263" width="42" height="30"/>
-                                <state key="normal" title="Pause"/>
+                                <rect key="frame" x="152" y="264.33333333333331" width="66" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pauseButtonTapped:" destination="dSd-n0-XgQ" eventType="touchUpInside" id="3iK-VW-ONh"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFU-No-CAU">
+                                <rect key="frame" x="0.0" y="341" width="390" height="325"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPr-ta-7A0">
-                                <rect key="frame" x="266" y="263" width="39" height="30"/>
-                                <state key="normal" title="Reset"/>
+                                <rect key="frame" x="291" y="263.33333333333331" width="62" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="resetButtonTapped:" destination="dSd-n0-XgQ" eventType="touchUpInside" id="03a-DJ-37g"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFU-No-CAU">
-                                <rect key="frame" x="0.0" y="341" width="390" height="325"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k6x-cV-afk"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1299,22 +1307,22 @@
                             <constraint firstItem="9vO-jI-xCk" firstAttribute="bottom" secondItem="k6x-cV-afk" secondAttribute="bottom" id="80D-WA-Stm"/>
                             <constraint firstItem="TxV-Fy-Faw" firstAttribute="top" secondItem="k6x-cV-afk" secondAttribute="top" constant="101" id="9ZZ-ih-Lfb"/>
                             <constraint firstItem="E0n-Sc-pkM" firstAttribute="baseline" secondItem="lJc-ja-gDP" secondAttribute="baseline" id="Ah1-ED-JqT"/>
-                            <constraint firstItem="lJc-ja-gDP" firstAttribute="baseline" secondItem="JPr-ta-7A0" secondAttribute="baseline" id="GTx-RY-Nds"/>
+                            <constraint firstItem="lJc-ja-gDP" firstAttribute="baseline" secondItem="JPr-ta-7A0" secondAttribute="baseline" constant="1" id="GTx-RY-Nds"/>
                             <constraint firstItem="9vO-jI-xCk" firstAttribute="leading" secondItem="k6x-cV-afk" secondAttribute="leading" id="JPa-DC-z8P"/>
                             <constraint firstItem="UFU-No-CAU" firstAttribute="trailing" secondItem="k6x-cV-afk" secondAttribute="trailing" id="KLD-8L-pOz"/>
-                            <constraint firstItem="k6x-cV-afk" firstAttribute="trailing" secondItem="JPr-ta-7A0" secondAttribute="trailing" constant="85" id="OFW-HM-sbo"/>
+                            <constraint firstItem="k6x-cV-afk" firstAttribute="trailing" secondItem="JPr-ta-7A0" secondAttribute="trailing" constant="37" id="OFW-HM-sbo"/>
                             <constraint firstItem="9vO-jI-xCk" firstAttribute="leading" secondItem="3AQ-Vx-gtf" secondAttribute="leading" id="PsR-GR-dal"/>
                             <constraint firstItem="9vO-jI-xCk" firstAttribute="bottom" secondItem="k6x-cV-afk" secondAttribute="bottom" id="QJP-BY-a8K"/>
-                            <constraint firstItem="9vO-jI-xCk" firstAttribute="centerX" secondItem="lJc-ja-gDP" secondAttribute="centerX" id="RLc-dU-uaC"/>
+                            <constraint firstItem="9vO-jI-xCk" firstAttribute="centerX" secondItem="lJc-ja-gDP" secondAttribute="centerX" constant="10" id="RLc-dU-uaC"/>
                             <constraint firstItem="JPr-ta-7A0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lJc-ja-gDP" secondAttribute="trailing" constant="8" symbolic="YES" id="cPy-Iz-xgD"/>
                             <constraint firstItem="k6x-cV-afk" firstAttribute="bottom" secondItem="UFU-No-CAU" secondAttribute="bottom" constant="95" id="fvd-90-W0o"/>
                             <constraint firstItem="UFU-No-CAU" firstAttribute="leading" secondItem="k6x-cV-afk" secondAttribute="leading" id="lfA-aP-mFD"/>
                             <constraint firstItem="E0n-Sc-pkM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k6x-cV-afk" secondAttribute="leading" id="oqA-4q-PYF"/>
                             <constraint firstItem="9vO-jI-xCk" firstAttribute="top" secondItem="3AQ-Vx-gtf" secondAttribute="top" id="pa9-VX-9rr"/>
                             <constraint firstItem="9vO-jI-xCk" firstAttribute="trailing" secondItem="k6x-cV-afk" secondAttribute="trailing" id="sS8-w6-vp1"/>
-                            <constraint firstItem="TxV-Fy-Faw" firstAttribute="centerX" secondItem="lJc-ja-gDP" secondAttribute="centerX" id="uRM-yg-a1q"/>
+                            <constraint firstItem="TxV-Fy-Faw" firstAttribute="centerX" secondItem="lJc-ja-gDP" secondAttribute="centerX" constant="10.166666666666657" id="uRM-yg-a1q"/>
                             <constraint firstItem="E0n-Sc-pkM" firstAttribute="top" secondItem="TxV-Fy-Faw" secondAttribute="bottom" constant="68" id="vaD-E2-da1"/>
-                            <constraint firstItem="lJc-ja-gDP" firstAttribute="leading" secondItem="E0n-Sc-pkM" secondAttribute="trailing" constant="64" id="xGA-1t-FZP"/>
+                            <constraint firstItem="lJc-ja-gDP" firstAttribute="leading" secondItem="E0n-Sc-pkM" secondAttribute="trailing" constant="54" id="xGA-1t-FZP"/>
                             <constraint firstItem="UFU-No-CAU" firstAttribute="top" secondItem="k6x-cV-afk" secondAttribute="top" constant="297" id="xgZ-TN-6eS"/>
                         </constraints>
                     </view>
@@ -1363,8 +1371,8 @@
         <image name="flame" catalog="system" width="108" height="128"/>
         <image name="hare" catalog="system" width="128" height="92"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="mexican-food-black-background_23-2147740704" width="208.66667175292969" height="208.66667175292969"/>
         <image name="photo.on.rectangle.fill" catalog="system" width="128" height="96"/>
-        <image name="plate" width="244" height="183"/>
         <image name="plusminus.circle" catalog="system" width="128" height="121"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
