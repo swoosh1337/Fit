@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Adventure" representedClassName="Adventure" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="String"/>
+        <attribute name="story" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="parentAlbum" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Album" inverseName="adventures" inverseEntity="Album"/>
+    </entity>
+    <entity name="Album" representedClassName="Album" syncable="YES" codeGenerationType="class">
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="adventures" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Adventure" inverseName="parentAlbum" inverseEntity="Adventure"/>
+    </entity>
     <entity name="Avg" representedClassName="Avg" syncable="YES" codeGenerationType="category">
         <attribute name="avg" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
@@ -15,8 +27,10 @@
         <attribute name="daytime" optional="YES" attributeType="String"/>
     </entity>
     <elements>
+        <element name="Avg" positionX="-45" positionY="36" width="128" height="44"/>
         <element name="Note" positionX="-63" positionY="-18" width="128" height="89"/>
         <element name="Weight" positionX="-63" positionY="9" width="128" height="74"/>
-        <element name="Avg" positionX="-45" positionY="36" width="128" height="44"/>
+        <element name="Adventure" positionX="-54" positionY="18" width="128" height="119"/>
+        <element name="Album" positionX="-45" positionY="45" width="128" height="59"/>
     </elements>
 </model>
