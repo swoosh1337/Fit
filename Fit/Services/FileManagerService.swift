@@ -1,9 +1,3 @@
-//
-//  FileManagerService.swift
-//  Myres
-//
-//  Created by Luis Genesius on 01/05/21.
-//
 
 import Foundation
 import UIKit

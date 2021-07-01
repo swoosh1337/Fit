@@ -1,9 +1,4 @@
-//
-//  AlbumCollectionViewCell.swift
-//  Myres
-//
-//  Created by Luis Genesius on 02/05/21.
-//
+
 
 import UIKit
 

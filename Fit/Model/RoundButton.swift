@@ -1,10 +1,4 @@
-//
-//  RoundButton.swift
-//  AudioJournalApp
-//
-//  Created by David Robie on 7/16/20.
-//  Copyright © 2020 AJOMQP. All rights reserved.
-//
+
 
 import UIKit
 

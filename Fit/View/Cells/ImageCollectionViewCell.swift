@@ -1,9 +1,4 @@
-//
-//  ImageCollectionViewCell.swift
-//  Myres
-//
-//  Created by Luis Genesius on 28/04/21.
-//
+
 
 import UIKit
 

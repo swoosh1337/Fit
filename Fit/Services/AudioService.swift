@@ -1,9 +1,3 @@
-//
-//  AudioService.swift
-//  Myres
-//
-//  Created by Luis Genesius on 04/05/21.
-//
 
 import AVFoundation
 
