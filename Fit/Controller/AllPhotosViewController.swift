@@ -1,13 +1,8 @@
-//
-//  AllAdventuresViewController.swift
-//  Myres
-//
-//  Created by Luis Genesius on 28/04/21.
-//
+
 
 import UIKit
 
-class AllAdventuresViewController: UIViewController {
+class AllPhotosViewController: UIViewController {
 
     // MARK: - Outlets
     
@@ -176,13 +171,13 @@ class AllAdventuresViewController: UIViewController {
 
 // MARK: - Collection View Delegate
 
-extension AllAdventuresViewController: UICollectionViewDelegate {
+extension AllPhotosViewController: UICollectionViewDelegate {
     
 }
 
 // MARK: Collection View Data Source
 
-extension AllAdventuresViewController: UICollectionViewDataSource {
+extension AllPhotosViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return adventures.count
@@ -233,7 +228,7 @@ extension AllAdventuresViewController: UICollectionViewDataSource {
 
 // MARK: - Collection View Flow Layout
 
-extension AllAdventuresViewController: UICollectionViewDelegateFlowLayout {
+extension AllPhotosViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         

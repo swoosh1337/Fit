@@ -249,7 +249,7 @@ class PhotoPreviewViewController: UIViewController {
     // MARK: - Navigation
     
     private func updateAdventure() {
-        let updateVC = storyboard?.instantiateViewController(identifier: "updateVC") as! UpdateAdventureViewController
+        let updateVC = storyboard?.instantiateViewController(identifier: "updateVC") as! UpdatePhotoViewController
         
         updateVC.navigationItem.largeTitleDisplayMode = .never
         updateVC.title = "Update"

@@ -1,8 +1,5 @@
-//
-//  AddNewViewController.swift
-//  Myres
-//
-//  Created by Luis Genesius on 28/04/21.
+
+//  Created by Irakli Grigolia on 06/30/21.
 //
 
 import UIKit
@@ -23,7 +20,7 @@ class AddNewViewController: UIViewController {
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var storyTextField: UITextField!
     
-    @IBOutlet weak var selectAlbumButton: UIButton!
+   
 
     @IBOutlet weak var addPhotoButton: UIButton!
     
@@ -87,17 +84,13 @@ class AddNewViewController: UIViewController {
         locationTextField.layer.borderColor = UIColor.label.cgColor
         locationTextField.layer.cornerRadius = 10
         
-        storyTextField.delegate = self
-        storyTextField.layer.borderWidth = 1
-        storyTextField.layer.borderColor = UIColor.label.cgColor
-        storyTextField.layer.cornerRadius = 10
+        
+    
     }
     
     private func setButtonUI() {
         addPhotoButton.layer.cornerRadius = 10
-        selectAlbumButton.layer.borderWidth = 1
-        selectAlbumButton.layer.borderColor = UIColor.label.cgColor
-        selectAlbumButton.layer.cornerRadius = 10
+       
     }
     
     private func setPhotoUI() {
@@ -108,7 +101,7 @@ class AddNewViewController: UIViewController {
         titleTextField.isHidden = false
         locationTextField.isHidden = false
         storyTextField.isHidden = false
-        selectAlbumButton.isHidden = false
+      
         photoImageView.isHidden = false
         
         saveBarButton.isEnabled = true
@@ -122,7 +115,7 @@ class AddNewViewController: UIViewController {
         titleTextField.isHidden = true
         locationTextField.isHidden = true
         storyTextField.isHidden = true
-        selectAlbumButton.isHidden = true
+    
         photoImageView.isHidden = true
         
         saveBarButton.isEnabled = false
@@ -158,7 +151,7 @@ class AddNewViewController: UIViewController {
     }
     
     private func setAlbumTableView() {
-        albumTableView.frame = CGRect(x: selectAlbumButton.frame.origin.x, y: selectAlbumButton.frame.origin.y + selectAlbumButton.frame.height, width: selectAlbumButton.frame.width, height: 0)
+        
         view.addSubview(albumTableView)
         albumTableView.layer.cornerRadius = 5
         
@@ -170,7 +163,7 @@ class AddNewViewController: UIViewController {
     }
     
     private func makeToNormal() {
-        selectAlbumButton.setTitle("Select Album        ", for: .normal)
+       
         titleTextField.text = ""
         locationTextField.text = ""
         storyTextField.text = ""
@@ -186,11 +179,11 @@ class AddNewViewController: UIViewController {
     // MARK: - Set Animation
     
     private func setAnimation(transparentViewAlpha: CGFloat, additionalY: CGFloat, height: CGFloat) {
-        let frames = selectAlbumButton.frame
+        
         
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
             self.transparentView.alpha = transparentViewAlpha
-            self.albumTableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height + additionalY, width: frames.width, height: height)
+            
         }, completion: nil)
     }
     
@@ -368,7 +361,7 @@ extension AddNewViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectAlbumButton.setTitle(albums[indexPath.row].title, for: .normal)
+       
         getSelectedAlbum = albums[indexPath.row]
         removeTransparentView()
     }

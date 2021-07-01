@@ -1,20 +1,15 @@
-//
-//  UpdateAdventureViewController.swift
-//  Myres
-//
-//  Created by Luis Genesius on 05/05/21.
-//
+
 
 import UIKit
 
-class UpdateAdventureViewController: UIViewController {
+class UpdatePhotoViewController: UIViewController {
     
     // MARK: - Outlets
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var storyTextField: UITextField!
-    @IBOutlet weak var selectedAlbumButton: UIButton!
+   
     
     // MARK: - Attributes
     public var selectedAdventure: Adventure?
@@ -64,9 +59,7 @@ class UpdateAdventureViewController: UIViewController {
     }
     
     private func setButtonUI() {
-        selectedAlbumButton.layer.borderWidth = 1
-        selectedAlbumButton.layer.borderColor = UIColor.label.cgColor
-        selectedAlbumButton.layer.cornerRadius = 10
+    
     }
     
     private func setInitialText() {
@@ -74,10 +67,6 @@ class UpdateAdventureViewController: UIViewController {
         locationTextField.text = selectedAdventure?.location
         storyTextField.text = selectedAdventure?.story
         
-        if let album = selectedAdventure?.parentAlbum {
-            selectedAlbumButton.setTitle(album.title, for: .normal)
-            getSelectedAlbum = album
-        }
         
     }
     
@@ -106,11 +95,7 @@ class UpdateAdventureViewController: UIViewController {
     }
     
     private func setAlbumTableView() {
-        albumTableView.frame = CGRect(x: selectedAlbumButton.frame.origin.x, y: selectedAlbumButton.frame.origin.y + selectedAlbumButton.frame.height, width: selectedAlbumButton.frame.width, height: 0)
-        view.addSubview(albumTableView)
-        albumTableView.layer.cornerRadius = 5
         
-        albumTableView.reloadData()
     }
     
     @objc func removeTransparentView() {
@@ -127,11 +112,11 @@ class UpdateAdventureViewController: UIViewController {
     // MARK: - Set Animation
     
     private func setAnimation(transparentViewAlpha: CGFloat, additionalY: CGFloat, height: CGFloat) {
-        let frames = selectedAlbumButton.frame
+       
         
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
             self.transparentView.alpha = transparentViewAlpha
-            self.albumTableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height + additionalY, width: frames.width, height: height)
+          
         }, completion: nil)
         
         print("animation ...")
@@ -179,18 +164,18 @@ class UpdateAdventureViewController: UIViewController {
 
 // MARK: - Text Field Delegate
 
-extension UpdateAdventureViewController: UITextFieldDelegate {
+extension UpdatePhotoViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
 }
 
-extension UpdateAdventureViewController: UITableViewDelegate {
+extension UpdatePhotoViewController: UITableViewDelegate {
     
 }
 
-extension UpdateAdventureViewController: UITableViewDataSource {
+extension UpdatePhotoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return albums.count
     }
@@ -208,7 +193,7 @@ extension UpdateAdventureViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedAlbumButton.setTitle(albums[indexPath.row].title, for: .normal)
+       
         getSelectedAlbum = albums[indexPath.row]
         removeTransparentView()
     }
