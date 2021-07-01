@@ -234,9 +234,11 @@ class AddNewViewController: UIViewController {
         NotificationCenter.default.post(name: Notification.Name("adventureAdded"), object: nil)
         
         (bool == true) ? displaySuccessMessage() : showFailedSaveMessage()
+        
     }
     
     private func displaySuccessMessage() {
+        
         print("Success Save")
         
         AlertDisplayer.instance.showMessageAlert(vc: self, title: "Success Save", message: "You successfully added new adventure.")
@@ -246,6 +248,9 @@ class AddNewViewController: UIViewController {
         titleTextField.resignFirstResponder()
         locationTextField.resignFirstResponder()
         storyTextField.resignFirstResponder()
+       
+        
+        
     }
     
     private func showFailedSaveMessage() {
@@ -283,13 +288,16 @@ class AddNewViewController: UIViewController {
     }
     
     @IBAction func saveButtonAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "backToGalleryView", sender: self)
         if let titleText = self.titleTextField.text, !titleText.isEmpty, let locationText = self.locationTextField.text, !locationText.isEmpty, let storyText = self.storyTextField.text, !storyText.isEmpty {
             
             saveAdventure(title: titleText, location: locationText, story: storyText)
-            
+          
+
         } else {
             AlertDisplayer.instance.showMessageAlert(vc: self, title: "No Empty Text", message: "You must enter text in the field.")
         }
+        
     }
     
     @IBAction func cancelButtonAction(_ sender: Any) {

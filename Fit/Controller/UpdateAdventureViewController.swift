@@ -133,6 +133,8 @@ class UpdateAdventureViewController: UIViewController {
             self.transparentView.alpha = transparentViewAlpha
             self.albumTableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height + additionalY, width: frames.width, height: height)
         }, completion: nil)
+        
+        print("animation ...")
     }
     
     /*
@@ -172,9 +174,7 @@ class UpdateAdventureViewController: UIViewController {
         }
     }
 
-    @IBAction func selectAlbumAction(_ sender: Any) {
-        addAlbumSelectedUI()
-    }
+   
 }
 
 // MARK: - Text Field Delegate

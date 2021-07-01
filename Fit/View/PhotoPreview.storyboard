@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S09-Eb-Zce">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S09-Eb-Zce">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -12,7 +13,7 @@
         <!--Photo Preview View Controller-->
         <scene sceneID="rXa-vZ-2PA">
             <objects>
-                <viewController storyboardIdentifier="photoPreview" modalTransitionStyle="flipHorizontal" id="S09-Eb-Zce" customClass="PhotoPreviewViewController" customModule="Myres" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="photoPreview" modalTransitionStyle="flipHorizontal" id="S09-Eb-Zce" customClass="PhotoPreviewViewController" customModule="Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vrg-ax-Hp4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +41,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="0at-Su-kJy" customClass="PhotoPreviewCollectionViewCell" customModule="Myres" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="0at-Su-kJy" customClass="PhotoPreviewCollectionViewCell" customModule="Fit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Die-QZ-ggN">
@@ -98,7 +99,7 @@
         <!--Update Adventure View Controller-->
         <scene sceneID="syK-ZI-5yf">
             <objects>
-                <viewController storyboardIdentifier="updateVC" id="oen-0E-GZP" customClass="UpdateAdventureViewController" customModule="Myres" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="updateVC" id="oen-0E-GZP" customClass="UpdateAdventureViewController" customModule="Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9h7-iM-Mx4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

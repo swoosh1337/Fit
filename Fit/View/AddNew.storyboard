@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lis-Ad-UTv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lis-Ad-UTv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,7 +28,7 @@
         <!--Add New Adventure-->
         <scene sceneID="OIu-hZ-M6c">
             <objects>
-                <viewController id="7uo-Wp-s7l" customClass="AddNewViewController" customModule="Myres" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7uo-Wp-s7l" customClass="AddNewViewController" customModule="Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h5c-09-Pyh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,9 +131,6 @@ Take new photo using camera</string>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="G68-Hy-sT6">
                             <color key="tintColor" systemColor="systemBlueColor"/>
-                            <connections>
-                                <action selector="saveButtonAction:" destination="7uo-Wp-s7l" id="b7W-c0-fKx"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -142,7 +140,6 @@ Take new photo using camera</string>
                         <outlet property="infoLabel" destination="nn6-0t-wMY" id="sBq-41-sJR"/>
                         <outlet property="locationTextField" destination="iYT-qu-EOt" id="Ltv-Q1-y8U"/>
                         <outlet property="photoImageView" destination="hS7-K3-dOm" id="hFF-E6-5ur"/>
-                        <outlet property="saveBarButton" destination="G68-Hy-sT6" id="4pZ-uo-6q0"/>
                         <outlet property="selectAlbumButton" destination="aac-BS-yJV" id="Y1x-Lh-nRE"/>
                         <outlet property="storyTextField" destination="tEI-Oz-8Ti" id="WRm-eg-A9e"/>
                         <outlet property="titleTextField" destination="4Lu-Eu-oRL" id="GiW-Ls-cY6"/>
