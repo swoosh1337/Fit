@@ -98,6 +98,7 @@
                     <navigationItem key="navigationItem" id="Ybq-CY-kLn"/>
                     <connections>
                         <outlet property="logIn" destination="bdD-qm-a12" id="sE4-qS-bX6"/>
+                        <outlet property="loginButton" destination="bdD-qm-a12" id="uwJ-8c-ALy"/>
                         <outlet property="register" destination="9Xa-In-SnB" id="m9j-fd-ryX"/>
                         <outlet property="signGoogle" destination="5cf-a7-oGf" id="028-9K-HcC"/>
                         <outlet property="singFB" destination="G4l-th-gbF" id="n5y-UJ-6GI"/>
@@ -1564,7 +1565,7 @@ Take new photo using camera</string>
     <inferredMetricsTieBreakers>
         <segue reference="noi-1u-gGg"/>
         <segue reference="gnj-8b-aa7"/>
-        <segue reference="Jre-S7-A2N"/>
+        <segue reference="cBj-6P-eCJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitnass" width="341.33334350585938" height="341.33334350585938"/>

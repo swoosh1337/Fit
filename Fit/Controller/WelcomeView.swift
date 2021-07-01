@@ -14,6 +14,7 @@ class WelcomeView: UIViewController {
     @IBOutlet weak var logIn: UIButton!
     @IBOutlet weak var register: UIButton!
     
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +22,17 @@ class WelcomeView: UIViewController {
         singFB.layer.cornerRadius = 17
         logIn.layer.cornerRadius = 17
         register.layer.cornerRadius = 17
+      
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
+    
+    
+    
+    
   
     
     

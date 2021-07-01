@@ -48,9 +48,11 @@ class LogInView: UIViewController {
  
     
     @IBAction func loginUser(_ sender: Any) {
+        self.loginOutlet.isEnabled = false
         if let email = emailField.text, let password = passwordField.text {
             Auth.auth().signIn(withEmail:email, password: password){ [weak self] authResult,error
                 in guard let strongSelf = self else {return}
+               
                 if let e = error {
                     print(e.localizedDescription)
                 } else {
