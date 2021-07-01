@@ -64,7 +64,9 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     @objc func background(noti: Notification) {
+        if isTimerRunning == true{
         while seconds > 0{
+           
         seconds -= 1
         timerLabel.text = timeString(time: TimeInterval(seconds))
         print("im am in background")
@@ -82,6 +84,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             identifier: "SimplifiediOSNotification", content: notificationContent, trigger: trigger)
             
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        }
         
     }
     
@@ -102,6 +105,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
   
     
     @objc func updateTimer() {
+        if isTimerRunning == true {
         if seconds < 1 {
             
             
@@ -125,6 +129,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             timerLabel.text = timeString(time: TimeInterval(seconds))
         }
         print("going...")
+        }
     }
     
     func timeString(time:TimeInterval) -> String {
