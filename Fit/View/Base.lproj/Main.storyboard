@@ -19,38 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="V61-0o-gYu">
-                                <rect key="frame" x="24.333333333333343" y="108.33333333333331" width="341.33333333333326" height="627.33333333333348"/>
+                                <rect key="frame" x="24.333333333333343" y="166.33333333333334" width="341.33333333333326" height="511.33333333333326"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fitnass" translatesAutoresizingMaskIntoConstraints="NO" id="7t9-nV-alL">
                                         <rect key="frame" x="0.0" y="0.0" width="341.33333333333331" height="341.33333333333331"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7A3-ir-baL">
-                                        <rect key="frame" x="20.666666666666657" y="347.33333333333337" width="300" height="280"/>
+                                        <rect key="frame" x="20.666666666666657" y="347.33333333333326" width="300" height="164"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cf-a7-oGf" userLabel="Google">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="48"/>
-                                                <color key="backgroundColor" red="0.64491778609999995" green="0.48849576709999998" blue="0.97205930949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="MYY-iv-fEq"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Sign in with Google">
-                                                    <color key="titleColor" red="0.32160919611838468" green="0.09117473086325506" blue="0.50338176836776838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-th-gbF" userLabel="Facebook">
-                                                <rect key="frame" x="0.0" y="57.999999999999943" width="300" height="48"/>
-                                                <color key="backgroundColor" red="0.64491778609999995" green="0.48849576709999998" blue="0.97205930949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Z2M-gq-cGS"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Sign in with Facebook">
-                                                    <color key="titleColor" red="0.32160919609999999" green="0.091174730859999997" blue="0.50338176840000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdD-qm-a12" userLabel="Login">
-                                                <rect key="frame" x="0.0" y="115.99999999999994" width="300" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="48"/>
                                                 <color key="backgroundColor" red="0.64491778609999995" green="0.48849576709999998" blue="0.97205930949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="0vE-Ft-3ip"/>
@@ -64,13 +42,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-ib-fWZ">
-                                                <rect key="frame" x="0.0" y="173.99999999999994" width="300" height="48"/>
+                                                <rect key="frame" x="0.0" y="58" width="300" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" red="0.64491778609999995" green="0.48849576709999998" blue="0.97205930949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-In-SnB" userLabel="Register">
-                                                <rect key="frame" x="0.0" y="231.99999999999994" width="300" height="48"/>
+                                                <rect key="frame" x="0.0" y="116" width="300" height="48"/>
                                                 <color key="backgroundColor" red="0.64491778609999995" green="0.48849576709999998" blue="0.97205930949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eHl-uJ-WVm"/>
@@ -100,8 +78,7 @@
                         <outlet property="logIn" destination="bdD-qm-a12" id="sE4-qS-bX6"/>
                         <outlet property="loginButton" destination="bdD-qm-a12" id="uwJ-8c-ALy"/>
                         <outlet property="register" destination="9Xa-In-SnB" id="m9j-fd-ryX"/>
-                        <outlet property="signGoogle" destination="5cf-a7-oGf" id="028-9K-HcC"/>
-                        <outlet property="singFB" destination="G4l-th-gbF" id="n5y-UJ-6GI"/>
+                        <segue destination="xd2-m1-yaP" kind="push" identifier="fbLogin" id="91T-8Y-91e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -217,6 +194,7 @@
             <objects>
                 <navigationController id="e7I-b0-0o2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Training" image="flame" catalog="system" id="1dB-hy-PIB"/>
+                    <navigationItem key="navigationItem" id="0bq-OC-xMm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IrU-ov-4Fl">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -227,7 +205,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awa-45-bMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2907" y="717"/>
+            <point key="canvasLocation" x="2860" y="795"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VV0-4J-7RC">
@@ -389,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4Q-nf-3J3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2008" y="717"/>
+            <point key="canvasLocation" x="1042" y="911"/>
         </scene>
         <!--Diet Controller-->
         <scene sceneID="fuI-3Z-ARL">
@@ -468,13 +446,13 @@
                                 <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qm0-ij-CQc" userLabel="ContentView" customClass="Training">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="615.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="673.33333333333337"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-ac-Xp9">
-                                                <rect key="frame" x="20" y="11.666666666666686" width="350" height="592"/>
+                                                <rect key="frame" x="20" y="11.666666666666686" width="350" height="650"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO2-4k-ybN" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="42"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Legs">
@@ -496,7 +474,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdf-Hk-Tb4" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="90.666666666666671" width="350" height="42.000000000000014"/>
+                                                        <rect key="frame" x="0.0" y="110" width="350" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Shoulders">
@@ -518,7 +496,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-k7-GpT" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="181.33333333333331" width="350" height="42"/>
+                                                        <rect key="frame" x="0.0" y="220" width="350" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Back">
@@ -540,7 +518,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-S1-C5k" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="272" width="350" height="138.66666666666663"/>
+                                                        <rect key="frame" x="0.0" y="330" width="350" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Biceps">
@@ -562,7 +540,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-k8-dF0" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="459.33333333333331" width="350" height="42"/>
+                                                        <rect key="frame" x="0.0" y="439.99999999999994" width="350" height="100.00000000000006"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Triceps">
@@ -584,7 +562,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caX-is-dZ5" customClass="RoundButton" customModule="Fit" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="550" width="350" height="42"/>
+                                                        <rect key="frame" x="0.0" y="550" width="350" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Chest">
@@ -1544,28 +1522,28 @@ Take new photo using camera</string>
     </scenes>
     <designables>
         <designable name="U6r-k7-GpT">
-            <size key="intrinsicContentSize" width="54" height="42"/>
+            <size key="intrinsicContentSize" width="53.666666666666664" height="100"/>
         </designable>
         <designable name="caX-is-dZ5">
-            <size key="intrinsicContentSize" width="65" height="42"/>
+            <size key="intrinsicContentSize" width="64.333333333333329" height="100"/>
         </designable>
         <designable name="nTt-S1-C5k">
-            <size key="intrinsicContentSize" width="73" height="42"/>
+            <size key="intrinsicContentSize" width="73" height="100"/>
         </designable>
         <designable name="qqJ-k8-dF0">
-            <size key="intrinsicContentSize" width="78" height="42"/>
+            <size key="intrinsicContentSize" width="78" height="100"/>
         </designable>
         <designable name="vO2-4k-ybN">
-            <size key="intrinsicContentSize" width="53" height="42"/>
+            <size key="intrinsicContentSize" width="52.333333333333336" height="100"/>
         </designable>
         <designable name="xdf-Hk-Tb4">
-            <size key="intrinsicContentSize" width="109" height="42"/>
+            <size key="intrinsicContentSize" width="109" height="100"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="noi-1u-gGg"/>
         <segue reference="gnj-8b-aa7"/>
-        <segue reference="cBj-6P-eCJ"/>
+        <segue reference="91T-8Y-91e"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitnass" width="341.33334350585938" height="341.33334350585938"/>

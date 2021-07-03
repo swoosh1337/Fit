@@ -603,7 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D52VX5574L;
+				DEVELOPMENT_TEAM = 26HTZ756V8;
 				INFOPLIST_FILE = Fit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

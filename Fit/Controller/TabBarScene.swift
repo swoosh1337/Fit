@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import FBSDKLoginKit
 
 class TabBarScene: UITabBarController {
     
@@ -35,6 +35,9 @@ class TabBarScene: UITabBarController {
     @IBAction func logOutPress(_ sender: UIBarButtonItem) {
        
         do {
+            
+            LoginManager().logOut()
+            
             try Auth.auth().signOut()
             navigationController?.popToRootViewController(animated: true)
             

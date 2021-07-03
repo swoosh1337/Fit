@@ -9,13 +9,18 @@
 import UIKit
 import Firebase
 
-class LogInView: UIViewController {
+
+class LogInView: UIViewController{
+  
+    
+   
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
         emailField.layer.cornerRadius = 17
         emailField.clipsToBounds = true
