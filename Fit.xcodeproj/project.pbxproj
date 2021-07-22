@@ -32,7 +32,6 @@
 		057AA67F268A183E0046F7CD /* Adventure+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057AA67E268A183E0046F7CD /* Adventure+CoreDataClass.swift */; };
 		057AA681268A18430046F7CD /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057AA680268A18430046F7CD /* Album+CoreDataClass.swift */; };
 		057AA683268A18580046F7CD /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057AA682268A18580046F7CD /* Mode.swift */; };
-		057AA685268A1D7F0046F7CD /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057AA684268A1D7F0046F7CD /* AlbumTableViewCell.swift */; };
 		057AA688268B2F070046F7CD /* AlertDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057AA687268B2F070046F7CD /* AlertDisplayer.swift */; };
 		057AA68E268DBBD90046F7CD /* PhotoPreview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057AA68D268DBBD90046F7CD /* PhotoPreview.storyboard */; };
 		0593B2AF267E1DF80079E89C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0593B2AE267E1DF80079E89C /* TimerViewController.swift */; };
@@ -57,6 +56,7 @@
 		2ADA753C262A3A3A00A41AC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADA753A262A3A3A00A41AC1 /* Main.storyboard */; };
 		2ADA753E262A3A3C00A41AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADA753D262A3A3C00A41AC1 /* Assets.xcassets */; };
 		2ADA7541262A3A3C00A41AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADA753F262A3A3C00A41AC1 /* LaunchScreen.storyboard */; };
+		765CB89A26A9679600BDE8C3 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765CB89926A9679600BDE8C3 /* AlbumTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +85,6 @@
 		057AA67E268A183E0046F7CD /* Adventure+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Adventure+CoreDataClass.swift"; sourceTree = "<group>"; };
 		057AA680268A18430046F7CD /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
 		057AA682268A18580046F7CD /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
-		057AA684268A1D7F0046F7CD /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumTableViewCell.swift; path = "../../../../../../Downloads/myres-ios-app-main/Myres/Myres/Views/Cells/AlbumTableViewCell.swift"; sourceTree = "<group>"; };
 		057AA687268B2F070046F7CD /* AlertDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDisplayer.swift; sourceTree = "<group>"; };
 		057AA68D268DBBD90046F7CD /* PhotoPreview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoPreview.storyboard; sourceTree = "<group>"; };
 		0593B2AE267E1DF80079E89C /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		2ADA7542262A3A3C00A41AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58E39FC0C6B46BF2FFF03A1D /* Pods-Fit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit.debug.xcconfig"; path = "Target Support Files/Pods-Fit/Pods-Fit.debug.xcconfig"; sourceTree = "<group>"; };
 		65C3E461F8CA8D2B28A4701B /* Pods_Fit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		765CB89926A9679600BDE8C3 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		7A86419F2506A5D028703140 /* Pods-Fit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit.release.xcconfig"; path = "Target Support Files/Pods-Fit/Pods-Fit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +167,7 @@
 		057AA671268A17BD0046F7CD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				057AA684268A1D7F0046F7CD /* AlbumTableViewCell.swift */,
+				765CB89926A9679600BDE8C3 /* AlbumTableViewCell.swift */,
 				057AA672268A17BD0046F7CD /* PhotoPreviewCollectionViewCell.swift */,
 				057AA674268A17BD0046F7CD /* AlbumCollectionViewCell.swift */,
 				057AA675268A17BD0046F7CD /* ImageCollectionViewCell.swift */,
@@ -397,6 +397,7 @@
 				057AA6512689FA080046F7CD /* PhotoPreviewViewController.swift in Sources */,
 				0593B2AF267E1DF80079E89C /* TimerViewController.swift in Sources */,
 				05DBC0A82662806100752B23 /* NoteDetailVC.swift in Sources */,
+				765CB89A26A9679600BDE8C3 /* AlbumTableViewCell.swift in Sources */,
 				053BA2DC2672711200FAED02 /* MealDetailViewController.swift in Sources */,
 				05946CE12678D5F300A06D19 /* Avg.swift in Sources */,
 				057AA67A268A17BD0046F7CD /* ImageCollectionViewCell.swift in Sources */,
@@ -428,7 +429,6 @@
 				057AA64F2689FA000046F7CD /* AddNewViewController.swift in Sources */,
 				050FA6CE264443C000917965 /* Constants.swift in Sources */,
 				057AA681268A18430046F7CD /* Album+CoreDataClass.swift in Sources */,
-				057AA685268A1D7F0046F7CD /* AlbumTableViewCell.swift in Sources */,
 				2ADA7535262A3A3A00A41AC1 /* AppDelegate.swift in Sources */,
 				057AA67B268A17BD0046F7CD /* DetailCollectionViewCell.swift in Sources */,
 				05DBC0AC266280D600752B23 /* NoteTableView.swift in Sources */,
