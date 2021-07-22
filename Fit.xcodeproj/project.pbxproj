@@ -57,6 +57,20 @@
 		2ADA753E262A3A3C00A41AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADA753D262A3A3C00A41AC1 /* Assets.xcassets */; };
 		2ADA7541262A3A3C00A41AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADA753F262A3A3C00A41AC1 /* LaunchScreen.storyboard */; };
 		765CB89A26A9679600BDE8C3 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765CB89926A9679600BDE8C3 /* AlbumTableViewCell.swift */; };
+		765CB8A426A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.46.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB89C26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.46.png */; };
+		765CB8A526A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.52.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB89D26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.02.52.png */; };
+		765CB8A626A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.19.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB89E26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.19.png */; };
+		765CB8A726A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.54.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB89F26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.54.png */; };
+		765CB8A826A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.57.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8A026A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.57.png */; };
+		765CB8A926A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.45.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8A126A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.45.png */; };
+		765CB8AA26A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.26.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8A226A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.26.png */; };
+		765CB8AB26A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8A326A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.13.png */; };
+		765CB8B126A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.37.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8AC26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.37.png */; };
+		765CB8B226A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8AD26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.42.png */; };
+		765CB8B326A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.29.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8AE26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.29.png */; };
+		765CB8B426A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.05.27.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8AF26A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.05.27.png */; };
+		765CB8B526A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.48.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8B026A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.48.png */; };
+		765CB8B726A96E6000BDE8C3 /* Screenshot 2021-07-22 at 12.50.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 765CB8B626A96E6000BDE8C3 /* Screenshot 2021-07-22 at 12.50.13.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +127,20 @@
 		58E39FC0C6B46BF2FFF03A1D /* Pods-Fit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit.debug.xcconfig"; path = "Target Support Files/Pods-Fit/Pods-Fit.debug.xcconfig"; sourceTree = "<group>"; };
 		65C3E461F8CA8D2B28A4701B /* Pods_Fit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765CB89926A9679600BDE8C3 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		765CB89C26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.03.46.png"; sourceTree = "<group>"; };
+		765CB89D26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.02.52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.02.52.png"; sourceTree = "<group>"; };
+		765CB89E26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.03.19.png"; sourceTree = "<group>"; };
+		765CB89F26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.03.54.png"; sourceTree = "<group>"; };
+		765CB8A026A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.02.57.png"; sourceTree = "<group>"; };
+		765CB8A126A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.02.45.png"; sourceTree = "<group>"; };
+		765CB8A226A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.03.26.png"; sourceTree = "<group>"; };
+		765CB8A326A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.03.13.png"; sourceTree = "<group>"; };
+		765CB8AC26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.04.37.png"; sourceTree = "<group>"; };
+		765CB8AD26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.04.42.png"; sourceTree = "<group>"; };
+		765CB8AE26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.04.29.png"; sourceTree = "<group>"; };
+		765CB8AF26A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.05.27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.05.27.png"; sourceTree = "<group>"; };
+		765CB8B026A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 13.04.48.png"; sourceTree = "<group>"; };
+		765CB8B626A96E6000BDE8C3 /* Screenshot 2021-07-22 at 12.50.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-07-22 at 12.50.13.png"; sourceTree = "<group>"; };
 		7A86419F2506A5D028703140 /* Pods-Fit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit.release.xcconfig"; path = "Target Support Files/Pods-Fit/Pods-Fit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +282,7 @@
 		2ADA7533262A3A3A00A41AC1 /* Fit */ = {
 			isa = PBXGroup;
 			children = (
+				765CB89B26A96E3A00BDE8C3 /* screenshots */,
 				050FA6CD264443C000917965 /* Constants.swift */,
 				050FA6CC264442E600917965 /* Model */,
 				057AA662268A17530046F7CD /* Services */,
@@ -266,6 +295,27 @@
 				050FA6B62643FF2400917965 /* GoogleService-Info.plist */,
 			);
 			path = Fit;
+			sourceTree = "<group>";
+		};
+		765CB89B26A96E3A00BDE8C3 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				765CB8B626A96E6000BDE8C3 /* Screenshot 2021-07-22 at 12.50.13.png */,
+				765CB8AE26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.29.png */,
+				765CB8AC26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.37.png */,
+				765CB8AD26A96E5A00BDE8C3 /* Screenshot 2021-07-22 at 13.04.42.png */,
+				765CB8B026A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.48.png */,
+				765CB8AF26A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.05.27.png */,
+				765CB8A126A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.45.png */,
+				765CB89D26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.02.52.png */,
+				765CB8A026A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.57.png */,
+				765CB8A326A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.13.png */,
+				765CB89E26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.19.png */,
+				765CB8A226A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.26.png */,
+				765CB89C26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.46.png */,
+				765CB89F26A96E5100BDE8C3 /* Screenshot 2021-07-22 at 13.03.54.png */,
+			);
+			path = screenshots;
 			sourceTree = "<group>";
 		};
 		D62CB5C41A5672469F9E25FA /* Frameworks */ = {
@@ -336,12 +386,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765CB8B326A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.29.png in Resources */,
 				2ADA7541262A3A3C00A41AC1 /* LaunchScreen.storyboard in Resources */,
+				765CB8A426A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.46.png in Resources */,
+				765CB8AB26A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.13.png in Resources */,
 				050FA6B72643FF2400917965 /* GoogleService-Info.plist in Resources */,
+				765CB8B126A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.37.png in Resources */,
 				057AA670268A179E0046F7CD /* BottomCardViewController.xib in Resources */,
+				765CB8B526A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.48.png in Resources */,
+				765CB8A926A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.45.png in Resources */,
+				765CB8A826A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.57.png in Resources */,
 				2ADA753E262A3A3C00A41AC1 /* Assets.xcassets in Resources */,
+				765CB8A726A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.54.png in Resources */,
 				057AA68E268DBBD90046F7CD /* PhotoPreview.storyboard in Resources */,
+				765CB8B726A96E6000BDE8C3 /* Screenshot 2021-07-22 at 12.50.13.png in Resources */,
+				765CB8A526A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.02.52.png in Resources */,
+				765CB8B426A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.05.27.png in Resources */,
+				765CB8A626A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.19.png in Resources */,
 				2ADA753C262A3A3A00A41AC1 /* Main.storyboard in Resources */,
+				765CB8AA26A96E5200BDE8C3 /* Screenshot 2021-07-22 at 13.03.26.png in Resources */,
+				765CB8B226A96E5B00BDE8C3 /* Screenshot 2021-07-22 at 13.04.42.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
