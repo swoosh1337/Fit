@@ -102,7 +102,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="njs-zh-kcT">
                                         <rect key="frame" x="20.666666666666657" y="381.33333333333337" width="300" height="123.33333333333331"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5dN-Od-sHB">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5dN-Od-sHB">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="45.666666666666664"/>
                                                 <color key="backgroundColor" red="0.64313725490196072" green="0.49019607843137253" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -112,7 +112,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dUA-4X-F30">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dUA-4X-F30">
                                                 <rect key="frame" x="0.0" y="77.666666666666629" width="300" height="45.666666666666657"/>
                                                 <color key="backgroundColor" red="0.64491778609999995" green="0.48849576709999998" blue="0.97205930949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" red="0.32160919609999999" green="0.091174730859999997" blue="0.50338176840000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1221,13 +1221,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mexican-food-black-background_23-2147740704" translatesAutoresizingMaskIntoConstraints="NO" id="9vO-jI-xCk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FastingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="9vO-jI-xCk">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxV-Fy-Faw">
                                 <rect key="frame" x="36.666666666666657" y="145" width="317" height="50"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="44"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0n-Sc-pkM">
@@ -1244,13 +1244,13 @@
                                 <rect key="frame" x="152" y="264.33333333333331" width="66" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Pause">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="pauseButtonTapped:" destination="dSd-n0-XgQ" eventType="touchUpInside" id="3iK-VW-ONh"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFU-No-CAU">
+                            <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFU-No-CAU">
                                 <rect key="frame" x="0.0" y="341" width="390" height="325"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pickerView>
@@ -1258,7 +1258,7 @@
                                 <rect key="frame" x="291" y="263.33333333333331" width="62" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Reset">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="resetButtonTapped:" destination="dSd-n0-XgQ" eventType="touchUpInside" id="03a-DJ-37g"/>
@@ -1543,9 +1543,10 @@ Take new photo using camera</string>
     <inferredMetricsTieBreakers>
         <segue reference="noi-1u-gGg"/>
         <segue reference="gnj-8b-aa7"/>
-        <segue reference="91T-8Y-91e"/>
+        <segue reference="cBj-6P-eCJ"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="FastingBackground" width="375" height="667"/>
         <image name="Fitnass" width="341.33334350585938" height="341.33334350585938"/>
         <image name="ant-photo" width="6000" height="4000"/>
         <image name="camera" catalog="system" width="128" height="94"/>
@@ -1553,7 +1554,6 @@ Take new photo using camera</string>
         <image name="flame" catalog="system" width="108" height="128"/>
         <image name="hare" catalog="system" width="128" height="92"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="mexican-food-black-background_23-2147740704" width="208.66667175292969" height="208.66667175292969"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="96"/>
         <image name="photo.on.rectangle.fill" catalog="system" width="128" height="96"/>
