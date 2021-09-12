@@ -356,7 +356,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = "Beka Japaridze";
+				ORGANIZATIONNAME = "Irakli Grigolia";
 				TargetAttributes = {
 					2ADA7530262A3A3900A41AC1 = {
 						CreatedOnToolsVersion = 11.7;
